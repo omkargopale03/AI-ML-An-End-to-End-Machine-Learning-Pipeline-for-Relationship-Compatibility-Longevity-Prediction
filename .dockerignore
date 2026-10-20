@@ -1,0 +1,12 @@
+.git
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+.ipynb_checkpoints
+data/raw/*.csv
+data/processed/*.csv
+models/*.joblib
+models/metrics.json
+reports/figures/*.png

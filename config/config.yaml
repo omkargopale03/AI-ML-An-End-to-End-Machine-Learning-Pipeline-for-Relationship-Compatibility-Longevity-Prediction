@@ -1,0 +1,18 @@
+# Pipeline configuration. Paths are relative to the project root.
+seed: 42
+
+data:
+  n_samples: 10000      # number of synthetic couples
+  missing_rate: 0.03    # fraction of values blanked out in selected columns
+  outlier_rate: 0.005   # fraction of rows with an exaggerated distance_km
+
+training:
+  test_size: 0.2
+  cv_folds: 5
+  n_iter: 8             # RandomizedSearchCV iterations per candidate model
+  n_jobs: -1
+
+paths:
+  data_dir: data
+  models_dir: models
+  reports_dir: reports
